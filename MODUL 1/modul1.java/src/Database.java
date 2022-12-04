@@ -23,9 +23,9 @@ public class Database {
             System.out.print("Masukan nama menu : ");
             scan.nextLine();
             String search_menu = scan.nextLine();
-        String[] title = search_menu.split(" ");
-        String search_menu_titled = ""; 
-        for(int i = 0;i<title.length;i++) {
+            String[] title = search_menu.split(" ");
+            String search_menu_titled = ""; 
+            for(int i = 0;i<title.length;i++) {
             search_menu_titled += title[i].substring(0,1).toUpperCase()+title[i].substring(1,title[i].length());
             if (i!=(title.length-1)){
                 search_menu_titled += " ";
